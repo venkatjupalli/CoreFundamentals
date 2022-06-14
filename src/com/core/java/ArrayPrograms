@@ -1,0 +1,77 @@
+ 1)Write a Java program to find the length or size of the different array
+ Array = {10, 20, 30, 40, 50}
+ 2)Write Array programs in Java to find the sum of array elements in Java
+ Array = {10, 20, 30, 40, 50}
+ 3)Write a Java program to find the average of an array.
+ Array = {10, 20, 30, 40, 50}
+ 4)Write Array programs in Java to count the even and odd numbers in the given array.
+ Array = {11, 12, 13, 14, 15}
+ 5)Write a Java program to put even and odd elements of an array in 2 separate arrays
+ Array = {11, 12, 13, 14, 15}
+ 6)Write a Java program to find the sum of even and odd numbers in an array.
+ Array = {11, 12, 13, 14, 15}
+ 7)WriteArray programs in Java to remove odd numbers from an array
+ Array = {11, 12, 13, 14, 15}
+ 8)WriteArray programs in Java to print all negative elements in an array
+ Array = {-15, -10, -5, 0, 5, 10, 15}
+ Array = {10, 20, 30, 40, 50}
+ 9)Writean array program in Java to separate positive and negative numbers in a given array
+ Array = {-10, 5, 0, -9, 18, 27, -36}
+ Array = {-50, -60, -70}
+ 10)WriteArray programs in Java to find the numbers which are greater than the given number from an array.
+ Array = {-10, 5, 0, -9, 18, 27, -36}
+ Number = 5
+ Array = {9, 8, 7, 0, -2, 5}
+ Average = 4.0
+ 11)WriteArray programs in Java to find the sum of two arrays elements.
+ Array1 = {10, 20, 30, 40, 50}
+ Array2 = {9, 18, 27, 36, 45}
+ The resultant array will be,
+ Array3 = {19, 38, 57, 76, 95}
+12) WriteArray programs in Java to compare two arrays with respect to its elements. Compare using = operator, and Arrays.equals() method
+Array1 = {10,20,30,40,50}
+Array2 = {15,25,35,45,55}
+Then,
+Array1 and Array2 are not same.
+13)Write a Java program to merge two given arrays
+Array1 = [10, 20, 30, 40, 50]
+Array2 = [9, 18, 27, 36, 45]
+Then the Result should be,
+Merged Array = [10, 20, 30, 40, 50, 9, 18, 27, 36, 45]
+14)Writean array program in Java to find the largest number in the given array
+Array: {10, 5, -15, 20, -30}
+Largest element = 20
+15)Writean array program in Java to find the smallest number in the given array.
+Array: {10, 5, -15, 20, -30}
+Largest element = -30
+16)Write an array program in Java to remove duplicates from a given array.
+Sorted array = {10, 10, 20, 30, 40, 40, 50}
+After removing the duplicates from array = {10, 20, 30, 40, 50}
+Unsorted Array = {30, 50, 20, 50, 10, 20, 30, 10, 10, 40}
+After removing the duplicates from array = {30, 50, 20, 10, 40}
+17)Write basic array programs in Java to insert an element at a specific position
+Array = {10, 20, 30, 40, 50}
+Element to be inserted = 99
+Position = 3
+Final result = {10, 20, 30, 99, 40, 50}
+18)Write basic array programs in Java to add an element to the given array
+Array: [30, 50, 20, 40, 10]
+Element to be added = 99
+New array: [30, 50, 20, 40, 10, 99]
+19)Write an array program in Java to remove an element from an array.
+Original array: [10, 20, 30, 40, 50]
+Index to remove = 3
+New array: [10, 20, 30, 50]
+
+
+1)Finding factorial using for loop
+int number = 5; (5*4*3*2*1)
+output=120
+
+2)Finding Factorial using while loop
+int number = 5; (5*4*3*2*1)
+output=120
+
+3)Find the Sum of Digits of a Number
+int number=12345;
+output=15

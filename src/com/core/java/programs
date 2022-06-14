@@ -1,0 +1,318 @@
+abstract class ABC
+{
+    void firstMethod()
+    {
+        System.out.println("First Method");
+    }
+
+    void secondMethod()
+    {
+        System.out.println("Second Method");
+    }
+}
+-- is it valid?
+
+---------
+abstract class AbstractClass
+{
+    abstract void abstractMethod()
+    {
+        System.out.println("abstract Method");
+    }
+}
+--valid or not if not whats the error
+--------------
+
+abstract class A
+{
+
+}
+
+class B extends A
+{
+
+}
+Object creation ? Class A or Class B?
+------------
+
+abstract class A
+{
+    abstract int add(int a, int b);
+}
+
+class B extends A
+{
+
+}
+-- any compilation error? if yes then corrections?
+--------------
+
+abstract class AbstractClass
+{
+    private abstract int abstractMethod();
+}
+-- is it valid? if no whats the error
+
+--------------
+abstract class X
+{
+    public X()
+    {
+        System.out.println("ONE");
+    }
+
+    abstract void abstractMethod();
+}
+
+class Y extends X
+{
+    public Y()
+    {
+        System.out.println("TWO");
+    }
+
+    @Override
+    void abstractMethod()
+    {
+        System.out.println("THREE");
+    }
+}
+
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        X x = new Y();
+
+        x.abstractMethod();
+    }
+}
+-- output?
+-----------------
+
+abstract class A
+{
+    {
+        System.out.println("AAA");
+    }
+}
+
+abstract class B extends A
+{
+    {
+        System.out.println("BBB");
+    }
+}
+
+class C extends B
+{
+    {
+        System.out.println("CCC");
+    }
+}
+
+public class MainClass
+{
+    public static void main(String[] args)
+    {
+        C c = new C();
+    }
+}
+--output?
+------------
+
+class X
+{
+    public X()
+    {
+        System.out.println("Constructor One");
+    }
+
+    abstract X(int i)
+    {
+        System.out.println("Constructor Two");
+    }
+}
+--output?
+------------
+
+class Automobile {
+    private String drive() {
+        return "Driving vehicle";
+    }
+}
+
+class Car extends Automobile {
+    protected String drive() {
+        return "Driving car";
+    }
+}
+
+public class ElectricCar extends Car {
+
+    @Override
+    public final String drive() {
+        return "Driving electric car";
+    }
+
+    public static void main(String[] wheels) {
+        final Car car = new ElectricCar();
+        System.out.print(car.drive());
+    }
+}
+o/p:
+-----------------
+
+public class Shape {
+    protected void display() {
+        System.out.println("Display-base");
+    }
+}
+// Circle.java
+public class Circle extends Shape { <
+    < access - modifier > void display() {
+        System.out.println("Display-derived");
+    }
+}
+o/p: access - modifier what to use?
+-----------
+
+Write a Java Program to reverse a string -- String s="welcome";
+Write a Java Program to swap two numbers using the third variable.
+Write a Java Program to swap two numbers without using the third variable.
+Write a Java Program to find the duplicate characters in a string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+public abstract class AbsClass
+{
+  // No abstract method here.
+}
+// Creating a subclass that inherits Abstract class.
+public class Subclass extends AbsClass
+{
+ public static void main(String[] args)
+ {
+   AbsClass c = new AbsClass();
+  }
+}
+------------------------
+
+public abstract class Hello
+{
+// Declaration of instance method.
+  public void msg1()
+  {
+    System.out.println("msg1-Hello");
+  }
+  abstract public void msg2();
+}
+public class Test extends Hello
+{
+// Overriding abstract method.
+  public void msg2()
+  {
+    System.out.println("msg2-Test");
+  }
+public static void main(String[] args)
+{
+// Creating object of subclass Test.
+   Test obj = new Test();
+    obj.msg1();
+    obj.msg2();
+  }
+}
+----------------------
+
+
+public abstract class AbstractClass
+{
+  int x = 10; // Data member.
+  AbstractClass()
+  {
+    System.out.println("AbstractClass constructor");
+  }
+final void m1()
+{
+   System.out.println("Final method");
+ }
+void m2()
+{
+   System.out.println("Instance method");
+ }
+static void m3()
+{
+   System.out.println("Static method");
+ }
+  abstract void msg();
+ }
+public class AbsTest extends AbstractClass
+{
+  AbsTest()
+  {
+     System.out.println("AbsTest class constructor");
+   }
+ void msg()
+ {
+    System.out.println("Hello Java");
+ }
+public static void main(String[] args)
+{
+   AbsTest t = new AbsTest();
+    t.msg();
+    t.m1();
+    t.m2();
+    m3();
+   System.out.println("x = " +t.x);
+  }
+}
+
+-------------------
+public abstract class Identity
+                   {
+                     abstract void getName(String name);
+                     abstract void getGender(String gender);
+                     abstract void getCity(String city);
+                   }
+                   public class Person extends Identity
+                   {
+                     void getName(String name)
+                     {
+                       System.out.println("Name : " +name);
+                     }
+                   void getGender(String gender)
+                   {
+                     System.out.println("Gender : " +gender);
+                   }
+                   void getCity(String city)
+                   {
+                     System.out.println("City: " +city);
+                   }
+                   // Newly added method in subclass.
+                     void getCountry(String country)
+                     {
+                       System.out.println("Country: " +country);
+                      }
+                    }
+                   public class Mainclass
+                   {
+                     public static void main(String[] args)
+                     {
+                   // Declaring abstract class reference equal to subclass objects.
+                       Identity i = new Person();
+                        i.getName("DEEPAK");
+                        i.getGender("MALE");
+                        i.getCity("DHANBAD");
+                      i.getCountry("INDIA");
+                     }
+                   }
